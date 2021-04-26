@@ -1,5 +1,6 @@
 void main() {
   var bike1 = new Bicycle(50, 10, 2);
+  print('Ira Jude Tajanlangit \n\n');
   print('BIKE1');
   print(bike1);
   var bike2 = new Bicycle(40, 20, 3);
@@ -14,6 +15,24 @@ class Bicycle {
   int gear;
   
   Bicycle(this.cadence, this.speed, this.gear);
+  
+  /*
+  Bicycle bike1 = new Bicycle();
+  Bicycle bike2 = new Bicycle();
+  
+  bike1.changeCadence(50);
+  bike1.speedUp(10);
+  bike1.changeGear(2);
+  bike1.printStates(); 
+   
+  bike2.changeCadence(50);
+  bike2.speedUp(10);
+  bike2.changeGear(2);
+  bike2.changeCadence(40);
+  bike2.speedUp(10);
+  bike2.changeGear(3);
+  bike2.printStates();
+  */
   
   @override
   String toString() => 'Cadence: $cadence    ' '\n'+'Speed: $speed mph' '\n'+'Gear: $gear ';
