@@ -1,0 +1,21 @@
+void main() {
+  var bike1 = new Bicycle(50, 10, 2);
+  print('BIKE1');
+  print(bike1);
+  var bike2 = new Bicycle(40, 20, 3);
+  print('\n'+'BIKE2');
+  print(bike2);
+
+}
+
+class Bicycle {
+  int cadence;
+  int speed;
+  int gear;
+  
+  Bicycle(this.cadence, this.speed, this.gear);
+  
+  @override
+  String toString() => 'Cadence: $cadence    ' '\n'+'Speed: $speed mph' '\n'+'Gear: $gear ';
+
+}
